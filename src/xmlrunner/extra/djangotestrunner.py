@@ -34,6 +34,12 @@ project's 'settings.py' file:
 """
 
 from django.test.simple import *
+from django.test.simple import *
+from django.test.utils import *
+from django.conf import settings
+from django.db.models import *
+from django.test.simple import build_suite, DjangoTestSuiteRunner
+import unittest
 import xmlrunner
 
 class XMLTestRunner(DjangoTestSuiteRunner):
